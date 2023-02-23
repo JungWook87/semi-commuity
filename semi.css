@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: black;
+}
+div {
+    
+}
+.main {
+    display: flex;
+}
+main {
+    width: 1140px;
+    margin: auto;
+}
+.main > div:nth-child(1) {
+    flex-basis: 80%;
+}
+.main > div:nth-child(2) {
+    flex-basis: 20%;
+}
+header
+ {
+    margin: 20px;
+    display: flex;
+}
+header > div:nth-child(1){
+    flex-basis: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+header > div:nth-child(2){
+    flex-basis: 60%;
+   
+}
+header > div:nth-child(3){
+    flex-basis: 25%;
+}
+.home-nav {
+    list-style: none;
+    display: flex;
+    
+}
+.home-nav > li >a {
+    margin: 30px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+.head-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head-right > a {
+    margin: 10px;
+    font-size: 25px;
+    color: white;
+}
+.chart > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(41, 39, 39);
+    border-radius: 10px;
+}
+.chart > ul > li {
+    margin: 5px;
+    font-weight: bold;
+    color: white;
+}
+.side {
+    margin: 0px 20px 0px 20px;
+}
+.side-1 {
+    position: sticky;
+    top: 0;
+}
+footer {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p a {
+    color: white;
+    text-decoration: none;
+    margin: 60px;
+}
