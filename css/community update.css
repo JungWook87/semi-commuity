@@ -1,14 +1,9 @@
 * {
     box-sizing: border-box;
-    }
-body {
-    margin: 0;  
-    background-color: black;
 }
-
-body *{
+body {
     margin: 0;
-    padding: 0;
+    background-color: black;
 }
 
 .main {
@@ -69,7 +64,6 @@ header > div:nth-child(3){
     color: white;
 }
 
-/* -------------------------------------------------------- */
 .community{
     display: flex;
     flex-direction: column;
@@ -77,6 +71,11 @@ header > div:nth-child(3){
     align-items: center;
     margin-top: 1%;
     padding: 0%;
+}
+
+.community *{
+    margin: 0;
+    padding: 0;
 }
 
 .search_area{
@@ -259,9 +258,7 @@ header > div:nth-child(3){
     margin: 0;
 } 
 
-/* --------------------------------------------------------------------- */
 
-/* aisde */
 .chart > ul {
     list-style: none;
     display: flex;
@@ -282,10 +279,8 @@ header > div:nth-child(3){
 }
 .side-1 {
     position: sticky;
-    top: 0;
+    top: 50px;
 }
-
-/* footer */
 footer {
     height: 200px;
     display: flex;
@@ -298,7 +293,6 @@ footer p a {
     text-decoration: none;
     margin: 60px;
 }
-
 .head-right a:hover {
     
     color: red;
@@ -331,6 +325,11 @@ footer p a {
 /* li에 마진이 너무들어가있음 */
 
 
+
+
+
+
+
 .search-box{
     
     display: flex;
@@ -338,7 +337,7 @@ footer p a {
     align-items: center;
 
     
-    transform: translate(10%,-5%);
+    transform: translate(7%,2%);
     height: 30px;
     background-color: black;
     border: 1px solid black;

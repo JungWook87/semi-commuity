@@ -46,19 +46,23 @@ header > div:nth-child(3){
     
 }
 .home-nav > li >a {
-    margin: 30px;
+    margin: 40px;
     font-weight: bold;
     color: white;
     text-decoration: none;
+}
+.head-right  div {
+    margin: 10px;
+    font-size: 23px;
+    color: white;
 }
 .head-right {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.head-right > a {
-    margin: 10px;
-    font-size: 25px;
+.head-right  a {
+    font-size: 23px;
     color: white;
 }
 .chart > ul {
@@ -95,3 +99,91 @@ footer p a {
     text-decoration: none;
     margin: 60px;
 }
+.head-right a:hover {
+    
+    color: red;
+    transition-duration: 0.5s;
+}
+
+.home-nav > li a { 
+    color: white;
+    text-transform:uppercase;
+    
+}
+    
+
+.home-nav > li a:after {
+    display:flex;
+    flex-direction:row;
+    margin-left: 40px;
+    content: '';
+    border-bottom: solid 2px #ea2129;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+.home-nav > li a:hover:after { transform: scaleX(1); }
+
+/* a끼리의 간격 넓혀서 맞추기 */
+
+.home-nav > li:nth-child(1) {
+  margin-left: 60px;
+}
+/* li에 마진이 너무들어가있음 */
+
+
+
+
+
+
+
+.search-box{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    transform: translate(10%,-5%);
+    height: 30px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 30px;
+    transition: 0.4s;
+    width:30px;
+  }
+  .search-box:hover{
+    background-color: white;
+    box-shadow: 0px 0px .5px 1px rgb(73, 73, 88);
+    width: 240px;
+    height: 35px;
+  }
+  .search-btn{
+    text-decoration: none;
+    float: right;
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+  }
+  .search-box:hover > .search-btn{
+    background-color: white;
+    color: black;
+  }
+  .search-txt{
+    padding: 0;
+    width: 0px;
+    border:none;
+    background: none;
+    outline: none;
+    float: left;
+    font-size: 1rem;
+    line-height: 30px;
+    transition: .4s;
+    
+  }
+  .search-box:hover > .search-txt{
+    width: 200px;
+    padding: 0px;
+  }
