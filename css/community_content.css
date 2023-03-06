@@ -383,7 +383,6 @@ footer p a {
   }
 
   .community_content{
-    border: 1px solid white;
     display: flex;
     flex-direction: column;
   }
@@ -394,17 +393,18 @@ footer p a {
   }
 
   .con_head{
-    border: 1px solid white;
     flex-basis: 10%;
     padding: 10px;
   }
   .con_body{
-    border: 1px solid white;
     flex-basis: 60%;
   }
-  .other_list{
-    border: 1px solid white;
+  .other_list_section{
     flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .con_head{
@@ -413,7 +413,6 @@ footer p a {
     align-items: center;
   }
   .con_head > div:first-child{
-    border: 1px solid white;
     flex-basis: 5%;
     display: flex;
     justify-content: center;
@@ -426,7 +425,6 @@ footer p a {
     font-size: 40px;
   }
   .con_head > div:last-child{
-    border: 1px solid white;
     flex-basis: 95%;
     display: flex;
     justify-content: center;
@@ -435,7 +433,7 @@ footer p a {
   .con_head > div:last-child > p{
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .con_body{
@@ -445,26 +443,41 @@ footer p a {
   }
   .con_body > div {
     flex-basis: 95%;
-    border: 1px solid white;
     display: flex;
     flex-direction: column;
   }
   #body_title{
     flex-basis: 20%;
-    border: 1px solid white;
   }
   #body_title > p {
     color: white;
     font-weight: bold;
     font-size: 25px;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    border-top: 2px solid rgb(219, 211, 211);
+    border-bottom: 2px solid gray;
   }
 
   #content_body{
+    margin-top: 20px;
     flex-basis: 80%;
-    height: 500px;
-    border: 1px solid white;
-    color: white;
-    background-color: gray;
+    color: black;
+    background-color: white;
     overflow: auto;
     padding: 5px;
+  }
+
+  .other_list{
+    height: 50px;
+    width: 95%;
+    font-size: large;
+    line-height: 50px;
+    border: 1px solid gray;
+    padding-left: 10px;
+  }
+
+  .other_list > a{
+    text-decoration: none;
+    color: white;
   }
