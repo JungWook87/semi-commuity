@@ -79,13 +79,41 @@ resetBtn.addEventListener("click", function() {
     // 포스터
     // DB에서 전체 테이블을 JSON형태로 가져오고
     // JSON에서 JS타입으로 변경 후 각 포스터 이미지 자리에 대입
-    
-    
 
     for(let i = 0; i < postImg.length; i++){
         postImg[i].removeAttribute("src");
         postImg[i].setAttribute("src", "../img/에브리씽.jpg");
     }
+
+    // 프로필 사진
+    for(let i =0; i < 10; i++){
+        memberPic[i].setAttribute("src", communityTable.memPic);
+    }
     
-    
+    // 회원 닉네임
+    // 닉네임 위치 배열
+    const memberNic = document.getElementsByClassName("com_member_nic");
+
+    for(let i =0; i < 10; i++){
+        memberNic[i].firstElementChild.firstElementChild.innerText= communityTable.memNic;
+    }
+
+    // 작성일
+    const comDate = document.getElementsByClassName("com_member_date");
+    for(let i =0; i < 10; i++){
+        comDate[i].firstElementChild.innerText = communityTable.comDate;
+    }
+
+    // 커뮤니티 제목
+    const communityTitle = document.getElementsByClassName("com_title");
+    for(let i =0; i < 10; i++){
+        communityTitle[i].firstElementChild.innerText = communityTable.comTitle;
+    }
+
+    const comCont = document.getElementsByClassName("com_cont");
+    for(let i =0; i < 10; i++){
+        comCont[i].firstElementChild.innerText = communityTable.comCont;
+    }
+
+
 });
